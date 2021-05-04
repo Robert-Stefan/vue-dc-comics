@@ -5,7 +5,7 @@
 
 
       <!--MAIN-->
-      <main>Main content here</main>
+      <Maincontent />
 
       <!--FOOTER-->
       <footer>Footer here</footer>
@@ -15,11 +15,13 @@
 
 <script>
 import Header from '@/components/Header.vue';
+import Maincontent from '@/components/Maincontent.vue';
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Maincontent,
   }
 }
 </script>

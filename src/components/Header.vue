@@ -1,5 +1,7 @@
 <template>
     <header>
+
+        <!--LOGO-->
         <a href="/">
             <img src="../assets/img/dc-logo.png" alt="logo">
         </a>
@@ -39,6 +41,7 @@ export default {
 </script>
 
 <style scoped>
+
 header {
     display: flex;
     justify-content: space-around;
