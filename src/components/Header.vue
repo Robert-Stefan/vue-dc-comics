@@ -30,6 +30,9 @@ export default {
 
 <style scoped>
 header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -37,6 +40,7 @@ ul {
     display: flex;
     justify-content: center;
     list-style: none;
+    margin: 3rem 1rem;
 }
 
 li a {
