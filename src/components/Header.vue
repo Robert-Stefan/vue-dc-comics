@@ -7,16 +7,10 @@
         <!--nav items-->
         <nav>
             <ul>
-                <li><a href="/">Characters</a></li>
-                <li><a href="/">Characters</a></li>
-                <li><a href="/">Characters</a></li>
-                <li><a href="/">Characters</a></li>
-                <li><a href="/">Characters</a></li>
-                <li><a href="/">Characters</a></li>
-                <li><a href="/">Characters</a></li>
-                <li><a href="/">Characters</a></li>
-                <li><a href="/">Characters</a></li>
-                <li><a href="/">Characters</a></li>
+                <li v-for="(link, index) in links" :key="index">
+                    <a :class="{active: link.current}" :href="link.url">{{ link.text }}</a>
+                </li>
+                
             </ul>
         </nav>
     </header>
@@ -25,6 +19,22 @@
 <script>
 export default {
     name: 'Header',
+    data() {
+        return {
+            links: [
+                { text: 'Characters', url: '/characters', current: false},
+                { text: 'Comics', url: '/comics', current: true},
+                { text: 'Movies', url: '/movies', current: false},
+                { text: 'TV', url: '/tv', current: false},
+                { text: 'Games', url: '/games', current: false},
+                { text: 'Collectibles', url: '/collectibles', current: false},
+                { text: 'Videos', url: '/videos', current: false},
+                { text: 'Fans', url: '/fans', current: false},
+                { text: 'News', url: '/news', current: false},
+                { text: 'Shop', url: '/shop', current: false},
+            ]
+        }
+    }
 }
 </script>
 
@@ -49,6 +59,7 @@ li a {
     padding-bottom: 2rem;
 }
 
+li a.active,
 li a:hover {
   border-bottom: 3px solid blue;
 }
