@@ -6,6 +6,7 @@
 
       <!--MAIN-->
       <Maincontent />
+      <Marketing />
 
       <!--FOOTER-->
       <footer>Footer here</footer>
@@ -16,12 +17,14 @@
 <script>
 import Header from '@/components/Header.vue';
 import Maincontent from '@/components/Maincontent.vue';
+import Marketing from '@/components/Marketing.vue';
 
 export default {
   name: 'App',
   components: {
     Header,
     Maincontent,
+    Marketing,
   }
 }
 </script>
