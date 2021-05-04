@@ -9,7 +9,7 @@
       <Marketing />
 
       <!--FOOTER-->
-      <footer>Footer here</footer>
+      <Footer />
     
   </div>
 </template>
@@ -18,6 +18,7 @@
 import Header from '@/components/Header.vue';
 import Maincontent from '@/components/Maincontent.vue';
 import Marketing from '@/components/Marketing.vue';
+import Footer from '@/components/Footer.vue';
 
 export default {
   name: 'App',
@@ -25,6 +26,7 @@ export default {
     Header,
     Maincontent,
     Marketing,
+    Footer,
   }
 }
 </script>

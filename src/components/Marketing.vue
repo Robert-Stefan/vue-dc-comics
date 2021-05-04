@@ -44,7 +44,7 @@ export default {
 <style scoped>
 
 .container {
-    height: 175px;
+    height: 165px;
     background: #0482f9;
 }
 
