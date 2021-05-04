@@ -55,13 +55,23 @@ ul {
 
 li a {
     padding: 1rem;
+    font-size: 15px;
     text-decoration: none;
     padding-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.726);
 }
 
 li a.active,
 li a:hover {
-  border-bottom: 3px solid blue;
+    color: #0e92f0;
+  border-bottom: 3px solid #0e92f0;
+}
+
+img {
+    width: 100px;
+    padding: 10px;
 }
 
 </style>

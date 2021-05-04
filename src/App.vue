@@ -37,10 +37,6 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-img {
-  max-width: 100%;
-}
-
 a {
   color: #000;
 }
