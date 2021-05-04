@@ -53,14 +53,15 @@ ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    margin: 3rem 1rem;
+    margin: 0 1rem;
+    margin-top: 3rem;
 }
 
 li a {
     padding: 1rem;
     font-size: 15px;
     text-decoration: none;
-    padding-bottom: 2rem;
+    padding-bottom: 2.1rem;
     text-transform: uppercase;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.726);
@@ -69,7 +70,7 @@ li a {
 li a.active,
 li a:hover {
     color: #0e92f0;
-  border-bottom: 3px solid #0e92f0;
+    border-bottom: 3px solid #0e92f0;
 }
 
 img {
