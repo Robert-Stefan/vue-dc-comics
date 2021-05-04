@@ -70,6 +70,10 @@ img {
     padding-right: 10px;
 }
 
+img:nth-child(4) {
+    width: 40px;
+}
+
 li a {
     display: flex;
     align-items: center;
