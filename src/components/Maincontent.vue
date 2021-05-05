@@ -1,8 +1,17 @@
 <template>
   <section class="banner">
-      <p class="text"> -- Content goes here -- </p> 
-      
-      <ProdCard v-for="(product, index) in products" :key="index" :details="product"/>
+    <h1> Current Series</h1>
+
+    <div class="boxes">
+
+        <ProdCard 
+            v-for="(product, index) in products" 
+            :key="index" 
+            :details="product"
+        />     
+    
+    </div> 
+    
   </section>
 </template>
 
@@ -106,22 +115,21 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 .banner {
-    height: 120px;
-    background-color: #000;
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #1c1c1c;
+    h1 {
+        color: white;
+        padding-bottom: 30px;
+    }
 }
 
-.text {
-    padding: 40px 260px;
-    font-size: 30px;
-    font-weight: bold;
-    color: #fff;
-}
-
-.box {
-    color: white;
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 </style>
