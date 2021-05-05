@@ -1,6 +1,8 @@
 <template>
     <div class="box"> 
+        <a :href="details.type">
         <img :src="details.thumb" :alt="details.type" />
+        </a>
         <p> {{ details.series }}</p>
     </div>
 </template>
@@ -25,6 +27,7 @@ export default {
 
         img {
             cursor: pointer;
+            border-radius: 10px;
         }
     }
 </style>

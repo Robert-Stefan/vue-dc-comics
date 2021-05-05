@@ -118,7 +118,7 @@ export default {
 <style scoped lang="scss">
 
 .banner {
-    padding: 2rem 1rem;
+    padding: 2rem 15rem;
     text-align: center;
     background-color: #1c1c1c;
     h1 {
@@ -130,6 +130,7 @@ export default {
 .boxes {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 </style>

@@ -58,6 +58,7 @@ export default {
 ul {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 3rem;
 }
 
